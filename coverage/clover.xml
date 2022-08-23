@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1660873931649" clover="3.2.0">
+  <project timestamp="1660873931650" name="All files">
+    <metrics statements="55" coveredstatements="53" conditionals="12" coveredconditionals="6" methods="21" coveredmethods="20" elements="88" coveredelements="79" complexity="0" loc="55" ncloc="55" packages="4" files="4" classes="4"/>
+    <package name="controllers">
+      <metrics statements="22" coveredstatements="22" conditionals="4" coveredconditionals="2" methods="8" coveredmethods="8"/>
+      <file name="products.controller.js" path="/home/amanda/My Projects/store-manager-api/controllers/products.controller.js">
+        <metrics statements="22" coveredstatements="22" conditionals="4" coveredconditionals="2" methods="8" coveredmethods="8"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="15" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="21" count="1" type="stmt"/>
+        <line num="22" count="1" type="stmt"/>
+        <line num="23" count="1" type="stmt"/>
+        <line num="27" count="1" type="stmt"/>
+        <line num="28" count="1" type="stmt"/>
+        <line num="29" count="1" type="stmt"/>
+        <line num="30" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="34" count="1" type="stmt"/>
+        <line num="35" count="1" type="stmt"/>
+        <line num="36" count="1" type="stmt"/>
+        <line num="37" count="1" type="stmt"/>
+        <line num="41" count="1" type="stmt"/>
+        <line num="42" count="1" type="stmt"/>
+        <line num="43" count="1" type="stmt"/>
+        <line num="47" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="middlewares">
+      <metrics statements="3" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <file name="custom.error.js" path="/home/amanda/My Projects/store-manager-api/middlewares/custom.error.js">
+        <metrics statements="3" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="3" count="0" type="stmt"/>
+        <line num="4" count="0" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="models">
+      <metrics statements="13" coveredstatements="13" conditionals="2" coveredconditionals="1" methods="6" coveredmethods="6"/>
+      <file name="products.model.js" path="/home/amanda/My Projects/store-manager-api/models/products.model.js">
+        <metrics statements="13" coveredstatements="13" conditionals="2" coveredconditionals="1" methods="6" coveredmethods="6"/>
+        <line num="3" count="3" type="stmt"/>
+        <line num="7" count="4" type="stmt"/>
+        <line num="8" count="3" type="stmt"/>
+        <line num="12" count="4" type="stmt"/>
+        <line num="15" count="3" type="cond" truecount="1" falsecount="1"/>
+        <line num="16" count="3" type="stmt"/>
+        <line num="20" count="4" type="stmt"/>
+        <line num="23" count="3" type="stmt"/>
+        <line num="27" count="4" type="stmt"/>
+        <line num="29" count="3" type="stmt"/>
+        <line num="33" count="4" type="stmt"/>
+        <line num="34" count="3" type="stmt"/>
+        <line num="38" count="2" type="stmt"/>
+      </file>
+    </package>
+    <package name="services">
+      <metrics statements="17" coveredstatements="17" conditionals="6" coveredconditionals="3" methods="6" coveredmethods="6"/>
+      <file name="products.service.js" path="/home/amanda/My Projects/store-manager-api/services/products.service.js">
+        <metrics statements="17" coveredstatements="17" conditionals="6" coveredconditionals="3" methods="6" coveredmethods="6"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="10" count="4" type="stmt"/>
+        <line num="11" count="3" type="stmt"/>
+        <line num="15" count="4" type="stmt"/>
+        <line num="16" count="3" type="cond" truecount="1" falsecount="1"/>
+        <line num="18" count="3" type="stmt"/>
+        <line num="22" count="4" type="stmt"/>
+        <line num="23" count="3" type="cond" truecount="1" falsecount="1"/>
+        <line num="25" count="3" type="stmt"/>
+        <line num="29" count="4" type="stmt"/>
+        <line num="30" count="3" type="cond" truecount="1" falsecount="1"/>
+        <line num="32" count="3" type="stmt"/>
+        <line num="33" count="3" type="stmt"/>
+        <line num="37" count="4" type="stmt"/>
+        <line num="41" count="1" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>
