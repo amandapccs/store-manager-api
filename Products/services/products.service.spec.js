@@ -1,6 +1,6 @@
 const { describe, it } = global;
 const { ProductsService } = require("./products.service");
-const { fakeData, fakeCreatedData, fakeProductsRepository, rejectProductsRepository } = require("../../__mocks__/products.repository.mock");
+const { fakeData, fakeCreatedData, fakeProductsRepository, rejectProductsRepository } = require("../__mocks__/products.repository.mock");
 
 const productsService = new ProductsService(fakeProductsRepository);
 const rejectProductsService = new ProductsService(rejectProductsRepository);

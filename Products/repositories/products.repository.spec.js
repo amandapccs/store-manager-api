@@ -1,5 +1,5 @@
 const { describe, it } = global;
-const { connection, fakeData, rejectConnection, fakeCreatedData, createdConnection } = require("../../__mocks__/connection.mock");
+const { connection, fakeData, rejectConnection, fakeCreatedData, createdConnection } = require("../__mocks__/connection.mock");
 const { ProductsRepository } = require("./products.repository");
 
 const productsRepository = new ProductsRepository(connection);

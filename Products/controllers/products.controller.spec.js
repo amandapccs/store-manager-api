@@ -1,5 +1,5 @@
 const { describe, it } = global;
-const { fakeData, fakeCreatedData, productsService, rejectProductsService, mockRequest, mockResponse } = require('../../__mocks__/products.service.mock');
+const { fakeData, fakeCreatedData, productsService, rejectProductsService, mockRequest, mockResponse } = require('../__mocks__/products.service.mock');
 const { ProductsController } = require('../controllers/products.controller');
 
 const productsController = new ProductsController(productsService);
