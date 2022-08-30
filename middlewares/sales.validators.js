@@ -1,8 +1,5 @@
 const Joi = require('joi');
 const CustomError = require('./custom.error');
-const { productsService } = require('../Products/services/products.service');
-const { salesService } = require('../Sales/services/sales.service');
-const { salesModels } = require('../Sales/repositories/sales.repository');
 
 const checkRequiredFields = async (req, _res, next) => {
   const sales = req.body;
@@ -36,22 +33,6 @@ const checkMinimunQuantity = async (req, _res, next) => {
   next();
 };
 
-const checkId = async (req, _res, next) => {
-  const sales = req.body;
-
-  await Promise.all(
-    sales.map((sale) => productsService.checkIfExists(productsModel, sale.productId)),
-  );
-
-  next();
-};
-
-const checkSale = async (req, res, next) => {
-  const { id } = req.params;
-  await salesService.checkIfExists(salesModels, id);
-  next();
-};
-
-const salesValidators = { checkRequiredFields, checkMinimunQuantity, checkId, checkSale };
+const salesValidators = { checkRequiredFields, checkMinimunQuantity };
 
 module.exports = { salesValidators };

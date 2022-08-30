@@ -10,7 +10,6 @@ describe('ProductsModel', () => {
   describe('getAll', () => {
     it('should return a value that equals fakeData', async () => {
       const result = await productsRepository.getAll();
-      console.log('result ---->', ...result);
       expect(...result).toEqual(fakeData);
     });
 

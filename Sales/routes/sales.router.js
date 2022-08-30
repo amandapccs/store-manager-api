@@ -6,29 +6,29 @@ const salesRouter = express.Router();
 salesRouter.get('/', sales.getAll.bind(sales));
 
 salesRouter.get('/:id',
-  salesValidators.checkSale,
+  // salesValidators.checkSale,
   sales.getById.bind(sales)
   );
 
 salesRouter.post('/',
   salesValidators.checkRequiredFields,
   salesValidators.checkMinimunQuantity,
-  salesValidators.checkId,
+  // salesValidators.checkId,
   sales.create.bind(sales)
   );
 
 salesRouter.delete('/:id',
-  salesValidators.checkSale,
+  // salesValidators.checkSale,
   sales.remove.bind(sales)
   );
 
-// salesRouter.put(
-//     '/: id',
-//     salesValidators.checkSale,
-//     salesValidators.checkRequiredFields,
-//     salesValidators.checkMinimunQuantity,
-//     salesValidators.checkId,
-//     sales.update.bind(sales),
-//   );
+salesRouter.put(
+    '/:id',
+    // salesValidators.salesValidations.checkProductById.bind(salesValidators.salesValidations),
+    salesValidators.checkRequiredFields,
+    salesValidators.checkMinimunQuantity,
+    // salesValidators.salesValidations.checkSaleById,
+    sales.update.bind(sales),
+  );
 
 module.exports = salesRouter;

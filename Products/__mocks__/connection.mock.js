@@ -18,4 +18,10 @@ const rejectConnection = {
   query: () => Promise.reject(new Error('Something went wrong')),
 }
 
-module.exports = { fakeData, connection, rejectConnection, fakeCreatedData, createdConnection };
+module.exports = {
+  fakeData, 
+  fakeCreatedData, 
+  connection, 
+  rejectConnection, 
+  createdConnection 
+};

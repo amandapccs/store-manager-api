@@ -12,6 +12,9 @@ describe('ProductsController', () => {
     it('should return all products', async () => {
       await productsController.getAll(req, res);
       expect(res.json).toHaveBeenCalledWith([fakeData]);
+      expect(res.json).not.toBeUndefined();
+      expect(res.status).toHaveBeenCalled();
+      expect(res.status).toHaveBeenCalledWith(200);
     });
   });
   
@@ -19,6 +22,9 @@ describe('ProductsController', () => {
     it('should return a product by id', async () => {
       await productsController.getById(req, res);
       expect(res.json).toHaveBeenCalledWith(fakeData);
+      expect(res.json).not.toBeUndefined();
+      expect(res.status).toHaveBeenCalled();
+      expect(res.status).toHaveBeenCalledWith(200);
     });
   });
   
@@ -26,6 +32,9 @@ describe('ProductsController', () => {
     it('should create a product', async () => {
       await productsController.create(req, res);
       expect(res.json).toHaveBeenCalledWith(fakeCreatedData);
+      expect(res.json).not.toBeUndefined();
+      expect(res.status).toHaveBeenCalled();
+      expect(res.status).toHaveBeenCalledWith(201);
     });
   });
   
@@ -33,6 +42,9 @@ describe('ProductsController', () => {
     it('should search for a product', async () => {
       await productsController.search(req, res);
       expect(res.json).toHaveBeenCalledWith(fakeData);
+      expect(res.json).not.toBeUndefined();
+      expect(res.status).toHaveBeenCalled();
+      expect(res.status).toHaveBeenCalledWith(200);
     });
   });
   
@@ -40,6 +52,9 @@ describe('ProductsController', () => {
     it('should update a product', async () => {
       await productsController.update(req, res);
       expect(res.json).toHaveBeenCalledWith(fakeCreatedData);
+      expect(res.json).not.toBeUndefined();
+      expect(res.status).toHaveBeenCalled();
+      expect(res.status).toHaveBeenCalledWith(201);
     });
   });
   
@@ -47,6 +62,9 @@ describe('ProductsController', () => {
     it('should remove a product', async () => {
       await productsController.remove(req, res);
       expect(res.send).toHaveBeenCalled();
+      expect(res.json).not.toBeUndefined();
+      expect(res.status).toHaveBeenCalled();
+      expect(res.status).toHaveBeenCalledWith(204);
     });
   });
 });
