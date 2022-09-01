@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "nodemon index.js",
     "test:mocha": "nyc --all --include models --include services --include controllers mocha tests/unit/**/*.js --exit",
     "test": "jest",
     "jest-coverage": "jest --coverage",
-    "start": "nodemon index.js",
     "migration": "node -e \"require('createDatabase.js').runMigration()\"",
     "seed": "node -e \"require('createDatabase.js').runSeed()\""
   },
