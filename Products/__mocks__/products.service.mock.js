@@ -6,6 +6,7 @@ const productsService = {
   getById: (id) => Promise.resolve(fakeData),
   create: (name) => Promise.resolve(fakeCreatedData),
   update: (name, id) => Promise.resolve(fakeCreatedData),
+  search: () => Promise.resolve(fakeData),
   remove: (id) => Promise.resolve(undefined)
 }
 

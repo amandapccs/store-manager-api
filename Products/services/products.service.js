@@ -12,7 +12,7 @@ class ProductsService {
 
   async getById(requestedId) {
   const product = await this.repository.getById(requestedId);
-  if (!product) return JSON.stringify({ error: 'Product not found', status: 404 });
+  if (!product) throw new CustomError(404, 'Product not found');
 
   return product;
   }

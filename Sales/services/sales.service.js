@@ -33,7 +33,7 @@ class SalesService {
     if (!sale) return JSON.stringify({ error: 'Sale not found', status: 404 });
   };
 
-  async #productExists (productId) {
+  async #checkIfProductExists (productId) {
     const product = await this.productRepository.getById(productId);
     return product;
   };
@@ -41,7 +41,7 @@ class SalesService {
   async update (id, salesInfo) {
     await this.#checkIfSaleExists(id);
     for (const sales of salesInfo) {
-      if (!(await this.#productExists(sales.productId))) {
+      if (!(await this.#checkIfProductExists(sales.productId))) {
         throw new CustomError(404, 'Product not found');
       }
       this.salesRepository.update(id, sales);
